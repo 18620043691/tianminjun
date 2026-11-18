@@ -104,7 +104,7 @@ struct ProfileSettingsView: View {
                 1,
                 nil
             ) else { return nil }
-            CGImageDestinationAddImage(image, destination, [
+            CGImageDestinationAddImage(destination, image, [
                 kCGImageDestinationLossyCompressionQuality: quality
             ] as CFDictionary)
             guard CGImageDestinationFinalize(destination) else { return nil }
