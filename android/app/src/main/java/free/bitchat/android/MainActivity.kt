@@ -124,7 +124,7 @@ class MainActivity : Activity(), MeshForegroundService.Listener {
         val nameRow = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         nicknameInput = EditText(this).apply {
             hint = "Nickname"
-            singleLine = true
+            setSingleLine(true)
             setText(getSharedPreferences("mesh-identity", Context.MODE_PRIVATE).getString("nickname", "Android"))
         }
         nameRow.addView(nicknameInput, LinearLayout.LayoutParams(0, dp(48), 1f))

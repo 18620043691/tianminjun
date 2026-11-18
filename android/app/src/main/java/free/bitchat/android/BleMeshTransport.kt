@@ -237,7 +237,7 @@ internal class BleMeshTransport(
         started = true
         scanner = bluetoothAdapter.bluetoothLeScanner
         advertiser = bluetoothAdapter.bluetoothLeAdvertiser
-        val server = manager?.openGattServer(appContext, serverCallback, mainHandler)
+        val server = manager?.openGattServer(appContext, serverCallback)
             ?: error("Unable to open the BLE GATT server.")
         gattServer = server
 

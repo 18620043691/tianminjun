@@ -6,9 +6,9 @@ import java.nio.ByteOrder
 import java.security.MessageDigest
 import java.util.LinkedHashMap
 
-internal data class MeshPeer(val id: String, val nickname: String, val connected: Boolean)
+data class MeshPeer(val id: String, val nickname: String, val connected: Boolean)
 
-internal data class MeshChatMessage(
+data class MeshChatMessage(
     val senderId: String,
     val nickname: String,
     val text: String,
