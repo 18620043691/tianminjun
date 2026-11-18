@@ -51,7 +51,7 @@ jobs:
 
   ios:
     name: Unsigned iOS IPA for on-device signing
-    runs-on: macos-latest
+    runs-on: macos-15
     timeout-minutes: 45
     steps:
       - name: Check out source
