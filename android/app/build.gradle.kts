@@ -7,6 +7,11 @@ android {
     namespace = "com.bitchat.droid"
     compileSdk = 35
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
     defaultConfig {
         applicationId = "com.bitchat.droid"
         minSdk = 26
@@ -29,6 +34,10 @@ android {
 
     buildFeatures {
         buildConfig = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     testOptions {
